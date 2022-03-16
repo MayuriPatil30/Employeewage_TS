@@ -4,18 +4,20 @@ console.log("Welcome to Employee Wage Computation");
 var Is_Present: number = 1;
 var Rate_Per_Hr: number = 20;
 var Fday_Hr: number = 8;
-var Total_DailyWadge: number;
+var Part_Hr: number = 4;
 
-Total_DailyWadge = Rate_Per_Hr * Fday_Hr;
 var empCheck: number = Math.floor(Math.random() * 10) % 2;
 
-if (empCheck == Is_Present) {
+if (empCheck == 1) {
     console.log("Emplyoee is Present");
-    console.log("Daily wedge is " + Total_DailyWadge);
+    console.log("Daily wage is " + (Rate_Per_Hr * Fday_Hr));
 
-} else {
+} else if (empCheck == 2) {
+    console.log("Emplyoee is Present");
+    console.log("Part time daily wage:" + (Rate_Per_Hr * Part_Hr))
+}
+else {
     console.log("Emplyoee is absent");
-
 }
 
 
